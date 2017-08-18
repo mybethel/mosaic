@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mosaic by Bethel</title>
+  </head>
+  <body>
+    <div id="app">
+      <sidebar></sidebar>
+      <router-view></router-view>
+    </div>
+  </body>
+  <script>
+    const {ipcRenderer, remote, shell} = require('electron');
+    window.ipc = ipcRenderer;
+    window.remote = remote;
+    window.shell = shell;
+  </script>
+  <!--SCRIPT-->
+</html>

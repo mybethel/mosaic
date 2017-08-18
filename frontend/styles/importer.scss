@@ -1,0 +1,29 @@
+@import 'variables';
+
+html, body {
+  font-family: system-ui;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: #FBFBFB;
+}
+
+::selection {
+  background: #2C7CF6;
+}
+
+:not(input):not(textarea),
+:not(input):not(textarea)::after,
+:not(input):not(textarea)::before {
+  -webkit-user-select: none;
+  cursor: default;
+  user-select: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
